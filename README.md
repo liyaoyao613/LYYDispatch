@@ -1,7 +1,5 @@
 # LYYDispatch
 
-[![CI Status](https://img.shields.io/travis/liyaoyao903/LYYDispatch.svg?style=flat)](https://travis-ci.org/liyaoyao903/LYYDispatch)
-
 [![Version](https://img.shields.io/cocoapods/v/LYYDispatch.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)
 
 [![License](https://img.shields.io/cocoapods/l/LYYDispatch.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)
@@ -78,51 +76,51 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 - #### Lyy_dispatchQueue
   1、全局队列异步执行
   
-  ```` objective-c
+```` objective-c
 Lyy_dispatchQueue().async(^{
      // 异步执行代码
 });
-  ````
+````
 
   2、全局队列同步执行
 
-  ``` objective-c
+``` objective-c
 Lyy_dispatchQueue().sync(^{
      // 同步执行代码
 });
-  ```
+```
 
   3、主线程异步执行
   
-  ```objective-c
+```objective-c
   Lyy_dispatchQueue().main().async(^{
       // 主线程异步执行代码
   });
-  ```
+```
   
   4、主线程同步执行
   
-  ```objective-c
+```objective-c
   Lyy_dispatchQueue().async(^{
   
     Lyy_dispatchQueue().main().sync(^{
         // 主线程同步执行
     });
   });
-  ```
+```
   
   5、主线程延迟执行
   
-  ```objective-c
+```objective-c
   Lyy_dispatchQueue().main().asyncAfter(5.0, ^{
       // 主线程延迟执行
   });
-  ```
+```
   
 - #### Lyy_dispatchGroup
   1、创建队列组在默认队列中执行
 
-  ```objective-c
+```objective-c
   Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) {
   
       // 任务1开始
@@ -144,11 +142,11 @@ Lyy_dispatchQueue().sync(^{
   }).mainQueueNotify(^{
       // 队列组所有任务执行完成后回调
   });
-  ```
+```
 
   2、创建队列组在自定义队列中执行
 
-  ```objective-c
+```objective-c
   LYYDispatchGroup *group2 = Lyy_dispatchGroup().wait(10);
        group2.asyncInQueue(Lyy_dispatchQueue().getCurrentQueue, ^(LYYDispatchGroup * _Nonnull dispatchGroup) {
         
@@ -171,21 +169,21 @@ Lyy_dispatchQueue().sync(^{
   group2.mainQueueNotify(^{
        // 队列组所有任务执行完成后回调
   });
-  ```
+```
 
 - #### Lyy_dispatchOnce
 
-  ```objective-c
+```objective-c
   static NSObject *instance = nil;
   Lyy_dispatchOnce(^{
       instance = [[NSObject alloc] init];
   });
   return instance;
-  ```
+```
 
 - #### LYYDispatchSemaphore
 
-  ```objective-c
+```objective-c
   // 初始化信号量
   LYYDispatchSemaphore *sema = Lyy_dispatchSemaphore(2);
   Lyy_dispatchQueue().asyncAfter(3.0, ^{
@@ -194,7 +192,7 @@ Lyy_dispatchQueue().sync(^{
   });
   // 信号量等待
   sema.wait(10);
-  ```
+```
 
 - #### LYYDispatchSourceTimer
 	
