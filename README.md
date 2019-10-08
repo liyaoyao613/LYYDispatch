@@ -1,6 +1,6 @@
 # LYYDispatch
 
-[![Version](https://img.shields.io/cocoapods/v/LYYDispatch.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20osx-green?style=flat)](https://cocoapods.org/pods/LYYDispatch)[![License](https://img.shields.io/badge/license-MIT-green?style=flat)](https://cocoapods.org/pods/LYYDispatch)
+[![Version](https://img.shields.io/cocoapods/v/LYYDispatch.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)	[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20osx-green?style=flat)](https://cocoapods.org/pods/LYYDispatch)	[![License](https://img.shields.io/badge/license-MIT-green?style=flat)](https://cocoapods.org/pods/LYYDispatch)
 
 
 ## 简介
