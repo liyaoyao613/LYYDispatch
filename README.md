@@ -76,11 +76,11 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 - #### Lyy_dispatchQueue
   1、全局队列异步执行
   
-```` objective-c
-Lyy_dispatchQueue().async(^{
+	```` objective-c
+	Lyy_dispatchQueue().async(^{
      // 异步执行代码
-});
-````
+	});
+	````
 
   2、全局队列同步执行
 
@@ -91,15 +91,15 @@ Lyy_dispatchQueue().sync(^{
 ```
 
   3、主线程异步执行
-  
+
 ```objective-c
   Lyy_dispatchQueue().main().async(^{
       // 主线程异步执行代码
   });
 ```
-  
+
   4、主线程同步执行
-  
+
 ```objective-c
   Lyy_dispatchQueue().async(^{
   
@@ -108,15 +108,15 @@ Lyy_dispatchQueue().sync(^{
     });
   });
 ```
-  
+
   5、主线程延迟执行
-  
+
 ```objective-c
   Lyy_dispatchQueue().main().asyncAfter(5.0, ^{
       // 主线程延迟执行
   });
 ```
-  
+
 - #### Lyy_dispatchGroup
   1、创建队列组在默认队列中执行
 
