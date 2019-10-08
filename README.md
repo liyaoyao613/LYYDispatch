@@ -8,7 +8,7 @@
 
 [![Platform](https://img.shields.io/cocoapods/p/LYYDispatch.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)
 
-## 介绍
+## 简介
 
 `LYYDispatch` 是对系统GCD的封装，采用链式思想，并去除函数名重复的命名，只保留函数名中的功能名称，使其看起来更加简洁，调用更流畅
 
@@ -60,7 +60,7 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 });
 ```
 
-##支持的GCD类型
+## 支持的GCD类型
 
 - dispatch_group_t
 - dispatch_queue_t
@@ -73,12 +73,12 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 
 在 `podfile` 文件中加入  `pod 'LYYDispatch' ` 即可
 
-##使用
+## 使用
 
-- ####Lyy_dispatchQueue
+- #### Lyy_dispatchQueue
   1、全局队列异步执行
   
-  ````objective-c
+  ```` objective-c
 Lyy_dispatchQueue().async(^{
      // 异步执行代码
 });
@@ -86,7 +86,7 @@ Lyy_dispatchQueue().async(^{
 
   2、全局队列同步执行
 
-  ```objective-c
+  ``` objective-c
 Lyy_dispatchQueue().sync(^{
      // 同步执行代码
 });
@@ -119,7 +119,7 @@ Lyy_dispatchQueue().sync(^{
   });
   ```
   
-- ####Lyy_dispatchGroup
+- #### Lyy_dispatchGroup
   1、创建队列组在默认队列中执行
 
   ```objective-c
