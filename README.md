@@ -2,9 +2,7 @@
 
 [![Version](https://img.shields.io/cocoapods/v/LYYDispatch.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)
 
-[![License](https://img.shields.io/cocoapods/l/LYYDispatch.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)
-
-[![Platform](https://img.shields.io/cocoapods/p/LYYDispatch.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)
+[![Platform](https://img.shields.io/badge/platform-iOS 8.0+-green.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)
 
 ## 简介
 
@@ -146,7 +144,7 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 
   2、创建队列组在自定义队列中执行
 
-​	```objective-c
+	```objective-c
   LYYDispatchGroup *group2 = Lyy_dispatchGroup().wait(10);
        group2.asyncInQueue(Lyy_dispatchQueue().getCurrentQueue, ^(LYYDispatchGroup * _Nonnull dispatchGroup) {
         
@@ -163,7 +161,6 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
   					// 任务2完成
              dispatchGroup.completion();
          });
-  
    });
   
   group2.mainQueueNotify(^{
