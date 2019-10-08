@@ -2,7 +2,10 @@
 
 [![Version](https://img.shields.io/cocoapods/v/LYYDispatch.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)
 
-[![Platform](https://img.shields.io/badge/platform-iOS 8.0+-green.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)
+[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20osx-green?style=flat)](https://cocoapods.org/pods/LYYDispatch)
+
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat)](https://cocoapods.org/pods/LYYDispatch)
+
 
 ## 简介
 
@@ -232,4 +235,4 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 
 ## License
 
-LYYDispatch is available under the MIT license. See the LICENSE file for more info.
+LYYDispatch is available under the [MIT license](https://github.com/liyaoyao613/LYYDispatch/blob/master/LICENSE). See the LICENSE file for more info.
