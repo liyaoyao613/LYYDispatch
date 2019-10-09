@@ -147,23 +147,23 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
   LYYDispatchGroup *group2 = Lyy_dispatchGroup().wait(10);
        group2.asyncInQueue(Lyy_dispatchQueue().getCurrentQueue, ^(LYYDispatchGroup * _Nonnull dispatchGroup) {
         
-         // 任务1开始
-         Lyy_dispatchQueue().asyncAfter(2.0, ^{
-            // 任务1完成
-             dispatchGroup.completion();
-         });
+       // 任务1开始
+       Lyy_dispatchQueue().asyncAfter(2.0, ^{
+          // 任务1完成
+           dispatchGroup.completion();
+       });
    });
   
    group2.asyncInQueue(Lyy_dispatchQueue().getCurrentQueue, ^(LYYDispatchGroup * _Nonnull dispatchGroup) {
-         // 任务2开始 
-         Lyy_dispatchQueue().asyncAfter(5.0, ^{
-  					// 任务2完成
-             dispatchGroup.completion();
-         });
+       // 任务2开始 
+       Lyy_dispatchQueue().asyncAfter(5.0, ^{
+          // 任务2完成
+           dispatchGroup.completion();
+       });
    });
   
   group2.mainQueueNotify(^{
-       // 队列组所有任务执行完成后回调
+     // 队列组所有任务执行完成后回调
   });
 	```
 
