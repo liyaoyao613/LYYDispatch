@@ -145,7 +145,7 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 
 	```objective-c
   LYYDispatchGroup *group2 = Lyy_dispatchGroup().wait(10);
-       group2.asyncInQueue(Lyy_dispatchQueue().getCurrentQueue, ^(LYYDispatchGroup * _Nonnull dispatchGroup) {
+  group2.asyncInQueue(Lyy_dispatchQueue().getCurrentQueue, ^(LYYDispatchGroup * _Nonnull dispatchGroup) {
         
        // 任务1开始
        Lyy_dispatchQueue().asyncAfter(2.0, ^{
@@ -172,7 +172,7 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 	```objective-c
   static NSObject *instance = nil;
   Lyy_dispatchOnce(^{
-      instance = [[NSObject alloc] init];
+       instance = [[NSObject alloc] init];
   });
   return instance;
 	```
