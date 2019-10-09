@@ -206,7 +206,6 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 	    NSLog(@"定时器取消");
 	    timer.cancel();
 	});
-	
 	```
 
 - #### LYYDispatchTime
