@@ -1,11 +1,11 @@
 # LYYDispatch
 
-[![Version](https://img.shields.io/badge/pod-v1.0.0-green?style=flat)](https://img.shields.io/cocoapods/v/LYYDispatch.svg)	[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20osx-green?style=flat)](https://cocoapods.org/pods/LYYDispatch)	[![License](https://img.shields.io/badge/license-MIT-green?style=flat)](https://cocoapods.org/pods/LYYDispatch)
+[![Version](https://img.shields.io/cocoapods/v/LYYDispatch.svg?style=flat)](https://cocoapods.org/pods/LYYDispatch)	[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20osx-green?style=flat)](https://cocoapods.org/pods/LYYDispatch)	[![License](https://img.shields.io/badge/license-MIT-green?style=flat)](https://cocoapods.org/pods/LYYDispatch)
 
 
 ## 简介
 
-`LYYDispatch` 是对系统GCD的封装，采用链式思想，并去除函数名重复的命名，只保留函数名中的功能名称，使其看起来更加简洁，调用更流畅
+`LYYDispatch` 是对系统GCD的封装，采用链式思想，去除函数名重复的命名，只保留函数名中的功能名称，使其看起来更加简洁，调用更流畅
 
 `LYYDispatch` 对`dispatch_time_t` 进行了函数封装，使用 `LYYDispatchTime`类创建时间类型， 使其调用时语义更明确
 
@@ -194,7 +194,7 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 	
 	```objective-c
 	// 初始化定时器
-	LYYDispatchSourceTimer *timer =  	Lyy_dispatchSourceTimer(Lyy_dispatchQueue().getCurrentQueue);
+	LYYDispatchSourceTimer *timer = 										Lyy_dispatchSourceTimer(Lyy_dispatchQueue().getCurrentQueue);
 	  
 	timer.setTimer(LYYDispatchTime.seconds(1))
 	.eventHandler(^{
