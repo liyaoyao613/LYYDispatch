@@ -194,7 +194,7 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 	
 	```objective-c
 	// 初始化定时器
-	LYYDispatchSourceTimer *timer = 										Lyy_dispatchSourceTimer(Lyy_dispatchQueue().getCurrentQueue);
+	LYYDispatchSourceTimer *timer = Lyy_dispatchSourceTimer(Lyy_dispatchQueue().getCurrentQueue);
 	  
 	timer.setTimer(LYYDispatchTime.seconds(1))
 	.eventHandler(^{
