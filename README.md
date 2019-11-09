@@ -70,7 +70,7 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
 
 ## 使用
 
-- #### Lyy_dispatchQueue
+- #### LYYDispatchQueue
   1、全局队列异步执行
   
 	````objective-c
@@ -114,7 +114,7 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
   });
 	```
 
-- #### Lyy_dispatchGroup
+- #### LYYDispatchGroup
   1、创建队列组在默认队列中执行
 
 	```objective-c
@@ -167,7 +167,7 @@ Lyy_dispatchGroup().wait(10).async(^(LYYDispatchGroup * _Nonnull dispatchGroup) 
   });
 	```
 
-- #### Lyy_dispatchOnce
+- #### LYYDispatchOnce
 
 	```objective-c
   static NSObject *instance = nil;
